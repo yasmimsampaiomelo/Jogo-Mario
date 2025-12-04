@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do mario</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="fundomodal">
+        <div id="conteudo_modal">
+            <img id="img_modal" src="./img/girl.png">
+            <h2>Parabéns, você atingiu todos os nívies, obrigado por jogar meu jogo.<br>
+                YK.<br>
+            </h2>
+
+
+        </div>
+    </div>
+    <div id="game-board" class="game-board">
+        <img id="nuvem" src="./img/clouds.png" class="clouds">
+        <img id="personagem" src="./img/mario.gif" class="personagem">
+        <img id="obstaculo" src="./img/pipe.png" class="pipe">
+
+
+        <span id="game-over"></span>
+        
+        <div class="pontuacao">
+            Pontuacao:<span id="pontuacao">0</span> metros
+        </div>
+
+        <div class="fase">
+            Fase: <span id="fase">0</span>
+        </div>
+
+
+    </div>
+    <audio id="fase2" loop controls class="audio">
+        <source src="./audio/among (1).mp3" type="audio/mp3">
+    </audio>
+    <audio id="fase3" controls class="audio">
+        <source src="./audio/superpower.mp3" type="audio/mp3">
+    </audio>
+    <audio id="tema" loop controls class="audio">
+        <source src="./audio/mario_tema.mp3" type="audio/mp3">
+    </audio>
+    <audio id="pulo" controls class="audio">
+        <source src="./audio/pulo.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-gamer-over" controls class="audio">
+        <source src="./audio/game-over.mp3" type="audio/mp3">
+    </audio>
+    <button id="iniciar" onclick="star();">Iniciar</button>
+    <button id="reiniciar" >Reiniciar</button>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        #fundo_modal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: dimgray 0.4;
+        }
+        #conteudo_modal{
+            background-color: aliceblue;
+            margin: auto;
+            border: 2px solid blue;
+            box-shadow: 10px 10px coral;
+            max-width: 60%;
+            height: 300px;
+        }
+        #close{
+            color: dimgrey;
+            font-size: 28px;
+            font-weight: bold;
+            float: right;         
+        }
+        #close:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="fundo_modal">
+    <div id="conteudo_modal">
+        <sapn id="close">&times;</sapn><!--e o x-->
+        <h2>Eu sou uma janela de pop_up</h2>
+        <p>BLA BLA BLA BLA</p>
+        nome<input type="text" ><br>
+        data de nascimento<input type="date"><br>
+        <button onclick="fechar();">fechar</button>
+    </div>
+    </div>
+    <button onclick="abrirmodal()">Abril Modal</button>
+    
+    <script>
+        function abrirmodal(){
+            document.getElementById("fundo_modal").style.display ="block";
+
+        }
+        function fechar(){
+            document.getElementById("fundo_modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
