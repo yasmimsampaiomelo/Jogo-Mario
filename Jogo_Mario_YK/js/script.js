@@ -97,8 +97,8 @@ function star() {
          // pontuação só aumenta se não colidiu
          pontuacao.textContent = Number(pontuacao.textContent) + 0.5;
 
-         // mudança de fase (seu código estava bom)
-         if (pontuacao.textContent >=600) {
+         // mudança de fase 
+         if (pontuacao.textContent >=200){
             pontuacao.textContent = 0;
             fase.textContent = Number(fase.textContent) + 1;
 
